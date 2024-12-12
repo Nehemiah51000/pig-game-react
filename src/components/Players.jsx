@@ -2,11 +2,24 @@
 // import { useState } from 'react';
 import Player from './player';
 
-function Players() {
+function Players({ diceRoll, activePlayer, currentScore, score }) {
   return (
     <>
-      <Player player={0} />
-      <Player player={1} />
+      <Player
+        player={0}
+        diceRoll={diceRoll}
+        activePlayer={activePlayer}
+        currentScore={currentScore}
+        score={score}
+      />
+
+      <Player
+        player={1}
+        diceRoll={diceRoll}
+        activePlayer={activePlayer}
+        currentScore={currentScore}
+        score={score}
+      />
     </>
   );
 }
